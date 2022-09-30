@@ -66,9 +66,9 @@ MPI_Comm_size //количество процессов
 MPI_Comm_rank //текущий process id
 
 
-mpicc -o main ./main.c
+mpicc -o myclient ./main.c
 
-mpirun -np 4 ./main.c
+mpirun -np 5 myclient.c
 
 
 
