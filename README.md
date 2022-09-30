@@ -69,6 +69,14 @@ MPI_Comm_rank //текущий process id
 mpicc -o myclient ./main.c
 
 mpirun -np 5 myclient.c
+              
+![image](https://user-images.githubusercontent.com/72603507/193298383-0ff5345d-27de-47e1-8850-bbdd62e6da44.png)
+
+Главный поток - 0 он принимает и отправляет данные
+              
+Все остальные потоки - вычислительные
+ 
+На каждый поток подается по строке, считается и отправляется обратно
 
 
 
